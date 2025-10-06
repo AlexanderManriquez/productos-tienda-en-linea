@@ -1,0 +1,155 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+}
+
+main.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Navegación  */
+.link{
+  color: #ddd;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Botones reutilizables  */
+.btn {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  margin: 0 0 1rem 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #444;
+}
+
+/* Página de inicio */
+.home {
+  text-align: center;
+  padding: 5rem;
+}
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.home p {
+  margin-bottom: 2rem;
+}
+
+/* Productos */
+.products h2 {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+.product-item {
+  border: 1px solid #ddd;
+  width: 80%;
+  background: #fff;
+  padding: 1rem;
+  margin: 0 0 1rem 0.5rem;
+  border-radius: 5px;
+}
+.product-item h2 {
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Formulario nuevo producto */
+.new-product h2 {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.form-product {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-group {
+  width: 80%;
+  margin: 0 0 1rem 0.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Páginas de errores */
+.error-page {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.error-page h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: #c0392b;
+}
+
+.error-page a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.error-page a:hover {
+  background: #444;
+}

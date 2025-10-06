@@ -1,0 +1,18 @@
+<section class="products">
+  <h2>{{title}}</h2>
+
+  {{#if products.length}}
+    <ul class="product-list">
+      {{#each products}}
+        <li class="product-item">
+          <strong>{{this.name}}</strong>
+          <p>{{this.description}}</p>
+          <span class="product-price">{{this.price}}</span>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p>No hay productos registrados.</p>
+  {{/if}} 
+</section>
+

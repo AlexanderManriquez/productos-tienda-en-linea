@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1759717849636,
+    "name": "Nintendo Switch 2",
+    "description": "Consola de última generación de Nintendo",
+    "price": 569990
+  },
+  {
+    "id": 1759717969319,
+    "name": "Control Pro Nintendo Switch 2 Negro",
+    "description": "Contro inalámbrico enfocado en precisión y comodidad",
+    "price": 109990
+  },
+  {
+    "id": 1759718016940,
+    "name": "Mario Kart World",
+    "description": "Último juego de la serie Mario Kart, exclusivo de Nintendo Switch 2",
+    "price": 59990
+  },
+  {
+    "id": 1759718097269,
+    "name": "Joy Con 2 ",
+    "description": "Controles inalámbricos para Nintendo Switch 2",
+    "price": 109990
+  },
+  {
+    "id": 1759718195310,
+    "name": "Donkey Kong Bananza",
+    "description": "Último lanzamiento de la serie Donkey Kong en versión para Nintendo Switch 2",
+    "price": 59990
+  },
+  {
+    "id": 1759720561672,
+    "name": "Joystick Controller Switch 2",
+    "description": "Joystick Alternativo compatible con Nintendo Switch 2",
+    "price": 24990
+  }
+]
