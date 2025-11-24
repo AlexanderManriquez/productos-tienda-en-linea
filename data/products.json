@@ -34,5 +34,12 @@
     "name": "Joystick Controller Switch 2",
     "description": "Joystick Alternativo compatible con Nintendo Switch 2",
     "price": 24990
+  },
+  {
+    "id": 1763999796957,
+    "name": "Sony PlayStation 5",
+    "price": 499990,
+    "description": "Versión sin disco, solo juegos digitales.",
+    "stock": 10
   }
 ]
