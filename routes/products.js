@@ -50,6 +50,14 @@ router.post('/', async (req, res, next) => {
       });
     }
 
+    if (!isValidString(description, 1, 500)) {
+      return res.status(400).render('newProduct', {
+        title: 'Agregar Producto',
+        error: 'Descripción inválida. No debe estar vacía y debe tener máximo 500 caracteres.',
+        oldData: req.body
+      });
+    }
+
     if (!isValidInteger(stock)) {
       return res.status(400).render('newProduct', {
         title: 'Agregar Producto',

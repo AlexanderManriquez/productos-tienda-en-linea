@@ -128,6 +128,19 @@ footer {
   border-radius: 4px;
 }
 
+/*Validaciones formulario */
+.field-error {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  display: block;
+}
+
+.input-error {
+  border-color: #d9534f !important;
+  background-color: #ffe6e6;
+}
+
 /* Páginas de errores */
 .error-page {
   text-align: center;
