@@ -2,17 +2,47 @@
   <h2>{{title}}</h2>
 
   {{#if products.length}}
-    <ul class="product-list">
-      {{#each products}}
-        <li class="product-item">
-          <strong>{{this.name}}</strong>
-          <p>{{this.description}}</p>
-          <span class="product-price">{{this.price}}</span>
-        </li>
-      {{/each}}
-    </ul>
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Descripción</th>    
+        </tr>
+      </thead>
+
+      <tbody>
+        {{#each products}}
+          <tr>
+            <td>{{this.name}}</td>
+            <td>$ {{this.price}}</td>
+            <td>{{this.stock}}
+            <td>
+              <button class="toggle-desc-btn" data-id="desc-{{this.id}}">
+                Ver detalles
+              </button>
+
+              <p id="desc-{{this.id}}" class="description hidden">
+                {{this.description}}
+              </p>
+            </td>
+          </tr>
+        {{/each}}  
+      </tbody>
+    </table>
   {{else}}
     <p>No hay productos registrados.</p>
   {{/if}} 
 </section>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<script src="/js/products.js"></script>
 
