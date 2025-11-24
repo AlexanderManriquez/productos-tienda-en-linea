@@ -35,19 +35,27 @@ router.post('/', async (req, res, next) => {
     //Validaciones del lado del servidor
 
     if (!isValidString(name, 2, 100)) {
-      return res.status(400).send('Nombre de producto inválido. Debe tener entre 2 y 100 caracteres.');
+      return res.status(400).render('newProduct', {
+        title: 'Agregar Producto',
+        error: 'Nombre inválido. Debe tener entre 2 y 100 caracteres.',
+        oldData: req.body
+      });
     }
 
     if (!isValidNumber(price)) {
-      return res.status(400).send('Precio inválido. Debe ser un número entero positivo.');
+      return res.status(400).render('newProduct', {
+        title: 'Agregar Producto',
+        error: 'Precio inválido. Debe ser un número positivo.',
+        oldData: req.body
+      });
     }
 
     if (!isValidInteger(stock)) {
-      return res.status(400).send('Stock inválido. Debe ser un número entero positivo.');
-    }
-
-    if (!isValidString(description, 1, 500)) {
-      return res.status(400).send('Descripción inválida. Debe tener entre 1 y 500 caracteres.');
+      return res.status(400).render('newProduct', {
+        title: 'Agregar Producto',
+        error: 'Stock inválido. Debe ser un número entero positivo.',
+        oldData: req.body
+      });
     }
     
     const products = await readJSON(FILE);
